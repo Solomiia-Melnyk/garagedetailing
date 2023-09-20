@@ -1,0 +1,235 @@
+/* modal  */
+.modal {
+   border: none;
+   display: none;
+   position: fixed;
+   top: 7%;
+   left: 25%;
+   width: 50%;
+   height: 80%;
+   border-radius: 5px;
+   justify-content: center;
+   align-items: center;
+   background-color: rgba(239, 228, 203, 0.749);
+}
+
+.zamow {
+   --glow-color: rgb(135, 231, 255);
+   --glow-spread-color: rgba(123, 222, 255, 0.781);
+   --enhanced-glow-color: rgb(231, 206, 255);
+   --btn-color: rgba(71, 183, 224, 0.514);
+   border: .25em solid var(--glow-color);
+   padding: 1em 3em;
+   color: var(--glow-color);
+   font-size: 15px;
+   font-weight: bold;
+   background-color: var(--btn-color);
+   border-radius: 1em;
+   outline: none;
+   box-shadow: 0 0 1em .25em var(--glow-color),
+      0 0 4em 1em var(--glow-spread-color),
+      inset 0 0 .75em .25em var(--glow-color);
+   text-shadow: 0 0 .5em var(--glow-color);
+   position: relative;
+   transition: all 0.3s;
+   margin: 20px auto;
+   text-transform: uppercase;
+   width: 50%;
+   padding: 10px;
+}
+
+.zamow::after {
+   --m-i: linear-gradient(#000, #000);
+   --m-o: content-box, padding-box;
+   content: "";
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   padding: var(--border-width);
+   background-image: conic-gradient(#ff0080,
+         #ff0080,
+         #ff0080,
+         #ff0080,
+         #ff0080,
+         #ff0080,
+         #ff0080);
+   -webkit-mask-image: var(--m-i), var(--m-i);
+   mask-image: var(--m-i), var(--m-i);
+   -webkit-mask-origin: var(--m-o);
+   mask-origin: var(--m-o);
+   mask-clip: var(--m-o);
+   mask-composite: exclude;
+   -webkit-mask-composite: destination-out;
+   filter: hue-rotate(0);
+   animation: rotate-hue634 linear 500ms infinite;
+   animation-play-state: paused;
+   border-radius: 20px;
+   border-color: #000;
+}
+
+.zamow:hover::after {
+   animation-play-state: running;
+   border-radius: 10px;
+}
+
+@keyframes rotate-hue634 {
+   to {
+      filter: hue-rotate(1turn);
+   }
+}
+
+.zamow,
+.zamow::after {
+   box-sizing: border-box;
+   border-radius: 20px;
+}
+
+.zamow:active {
+   --border-width: 5px;
+}
+
+.bn {
+   padding: 0.9em 1.6em;
+   border: none;
+   outline: none;
+   color: #FFF;
+   font-family: inherit;
+   font-weight: 500;
+   font-size: 17px;
+   cursor: pointer;
+   position: relative;
+   z-index: 0;
+}
+
+.bn::after {
+   content: "";
+   z-index: -1;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background-color: rgb(151, 151, 151);
+   left: 0;
+   top: 0;
+   border-radius: 10px;
+}
+
+.bn::before {
+   content: "";
+   background: linear-gradient(45deg,
+         #9effda, #5e90fa, #9effda,
+         #5e90fa, #9effda, #5e90fa);
+   position: absolute;
+   top: -2px;
+   left: -2px;
+   background-size: 600%;
+   z-index: -1;
+   width: calc(100% + 4px);
+   height: calc(100% + 4px);
+   filter: blur(8px);
+   animation: glowing345 20s linear infinite;
+   transition: opacity .3s ease-in-out;
+   border-radius: 20px;
+   opacity: 0;
+}
+
+@keyframes glowing345 {
+   0% {
+      background-position: 0 0;
+   }
+
+   50% {
+      background-position: 400% 0;
+   }
+
+   100% {
+      background-position: 0 0;
+   }
+}
+
+.bn:hover::before {
+   opacity: 1;
+}
+
+.bn:active:after {
+   background: transparent;
+}
+
+.bn:active {
+   color: #000;
+   font-weight: bold;
+}
+
+
+.fa-rectangle-xmark {
+   font-size: 25px;
+}
+
+.modal-content {
+   border: none;
+   background-color: #9cdafe48;
+   background-size: cover;
+   background-repeat: no-repeat;
+   padding: 20px;
+   border-radius: 5px;
+   text-align: center;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+}
+
+.modal-content p {
+   font-size: 32px;
+   font-weight: bolder;
+}
+
+.close {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   cursor: pointer;
+}
+
+.neonText {
+   animation: flicker 1.5s infinite alternate;
+   color: #fff;
+}
+
+@keyframes flicker {
+
+   0%,
+   18%,
+   22%,
+   25%,
+   53%,
+   57%,
+   100% {
+
+      text-shadow:
+         0 0 4px #fff,
+         0 0 11px #fff,
+         0 0 19px #fff,
+         0 0 40px rgb(0, 200, 255),
+         0 0 80px rgb(0, 191, 255),
+         0 0 90px rgb(9, 181, 255),
+         0 0 100px rgb(0, 217, 255),
+         0 0 150px rgb(10, 225, 249);
+
+   }
+
+   20%,
+   24%,
+   55% {
+      text-shadow: none;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .modal {
+         top: 7%;
+         left: 10%;
+         width: 80%;
+         height: 60%;
+      }
+}

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Garage Detailing</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+  </head>
+  <body>
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+ 
+  <div>
+    <header class="header">
+      <div class="blue"></div>
+      <nav class="navbar navbar-expand-lg navbar-light container">
+      <a href="index.html"><img src="images/logo.png" alt="logo" class="logo" /></a>
+      <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      >
+      <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav nav-list-style ml-auto">
+        <li class="nav-item"><a href="#aboutUs" class="nav-link active-page">O nas</a></li>
+        <li class="nav-item dropdown">
+        <a 
+          class="nav-link dropdown-toggle"
+          href="#"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Usługi
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="polishing.html">Polerowanie auta</a></li>
+          <li><a class="dropdown-item" href="reflectory.html">Regeneracja lamp</a></li>
+          <li><a class="dropdown-item" href="cleaning.html">Sprzątanie wnętrza samochodu</a></li>
+          <li><a class="dropdown-item bot" href="sell.html">Przygotowanie auta na sprzedaż</a></li>
+        </ul>
+      </li>
+      <li><a href="galeria.html" class="nav-link">Galeria</a></li>
+      <li><a href="cena.html" class="nav-link">Cena</a></li>
+    </ul>
+  </div>
+  <div class="phone_contact">
+    <a href="callto:602103298" id="phone">
+      <i class="fa-solid fa-phone-flip"></i>
+    </a>
+  </div>
+</nav>
+
+
+      <!-- slider in header  -->
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide container"
+        data-bs-ride="carousel"
+      >
+        <div class="head-info container">
+          <div class="row">
+            <div class="col-md-7 col-xs-12 offset-md-5">
+              <h1>Polerowanie samochodu</h1>
+              <h2>Regeneracja lamp</h2>
+              <h3>Przygotowanie auta na sprzedaż</h3>
+              <a href="#form" id="contactUs">Naciśnij do kontaktu z nami</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item forCar active">
+            <img
+              src="images/man-polish-car-garage.jpg"
+              class="d-block w-100"
+              alt="Polerovanie samochodu"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/christian-wiediger-CPUIOce-ZzU-unsplash.jpg"
+              class="d-block w-100 black-car"
+              alt="Przygotowanie auta na sprzedaż"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/car-wash-detailing-station.jpg"
+              class="d-block w-100"
+              alt="Dedailing"
+            />
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+    <!-- modal window -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close neonText" id="closeModal"><i class="fa-regular fa-rectangle-xmark"></i></span>
+        <p class="neonText">Zamów usługę już dziś i otrzymaj 10% rabatu</p>
+        <a href="#form" id="zamow" class="neonText zamow bn">Zamów</a>
+      </div>
+    </div>
+
+
+
+
+
+      <div class="container">
+        <div class="about" id="aboutUs">
+          <div class="row">
+            <div class="col-md-8 col-sm-12 offset-md-2  ">
+              <p>
+                "Witamy na naszej stronie, poświęconej mistrzowskiemu pielęgnowaniu samochodów i podnoszeniu ich estetyki. Jesteśmy zespołem  w dziedzinie detailingu, gotowym uczynić Twój samochód naprawdę wyjątkowym.
+              </p>
+              <p>
+                Niezależnie od tego, czy chcesz przywrócić blask swojemu samochodowi, oczyścić reflektory do kryształowej czystości, czy przygotować go do sprzedaży - jesteśmy tutaj, aby zaspokoić Twoje potrzeby."
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          
+        </div>
+        
+      <!-- uslugi  -->
+      <div class="uslugi row">
+        <h3 class="title-uslugi">Usługi</h3>
+        <div class="uslugi-fl">
+        <div class="card col-sm-3">
+          <img src="images/deniz-demirci-yeMjSP7UGlo-unsplash.jpg" class="card-img-top" alt="polerowanie auta">
+          <div class="card-body">
+            <h5 class="card-title">Polerowanie samochodu</h5>
+            <p class="card-text">Przywrócimy blask i głęboki kolor Twojego samochodu. Łuszczenie się farby, rysy i inne defekty staną się przeszłością dzięki naszym umiejętnościom w zakresie pielęgnacji.</p>
+            <a href="polishing.html">Więcej</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/fary.jpg" class="card-img-top" alt="polerowanie reflectorów">
+          <div class="card-body">
+            <h5 class="card-title">Regeneracja lamp</h5>
+            <p class="card-text">Wytarte i przyćmione reflektory nie tylko pogarszają widoczność, ale także obniżają ogólny wygląd samochodu. Oferujemy wysokiej jakości usługi przywracania reflektorów, które uczynią Twoje reflektory jak nowe.</p>
+            <a href="reflectory.html">Więcej</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/towfiqu-barbhuiya-5m5418Ng6t8-unsplash.jpg" class="card-img-top" alt="Sprzątanie wnętrza samochodu">
+          <div class="card-body">
+            <h5 class="card-title">Sprzątanie wnętrza samochodu</h5>
+            <p class="card-text">Oferujemy również usługę czyszczenia wnętrza, aby zapewnić Twojemu samochodowi świeżość i czystość. Oczyszczanie kabiny, zabezpieczanie powierzchni i inne działania.</p>
+            <a href="cleaning.html">Więcej</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/chad-kirchoff-xe-e69j6-Ds-unsplash.jpg" class="card-img-top" alt="Przygotowanie samochodu do sprzedaży">
+          <div class="card-body">
+            <h5 class="card-title">Przygotowanie samochodu do sprzedaży</h5>
+            <p class="card-text">Jeśli planujesz sprzedać swój samochód, jesteśmy gotowi pomóc Ci uczynić go jak najbardziej atrakcyjnym dla potencjalnych kupujących. Od dogłębnego oczyszczenia wnętrza po polerowanie karoserii - przygotujemy Twój samochód do imponującego pierwszego wrażenia.</p>
+            <a href="sell.html">Więcej</a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+        <div class="car-fon">
+          <div class="top-car">
+             <div class="container">
+              <div class="row">
+                <div class="col-md-9 col-sm-12 offset-md-2">
+                  <p>
+                    Nasza misja - zapewnić Ci przewagę, którą zasługujesz. Wierzymy, że każdy samochód zasługuje na najlepszą opiekę w dostępnych cenach.
+                  </p>
+                  <p>
+                    Skontaktuj się z nami jeszcze dzisiaj i pozwól nam zadbać o Twój samochód w sposób, na jaki zasługuje.
+                  </p>
+            </div>
+          </div>
+          </div>
+          </div>
+        </div>
+
+
+
+        <!-- api -->
+         <div id="quote-container"></div>
+    </main>
+
+    <div class="container">
+      <div class="row map-and-form">
+        <div class="map col-md-6 col-sm-12">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2437.5250444934145!2d21.180208375731734!3d52.3427619493378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ec559b8f0ff35%3A0x43448e943f1a533e!2sEjtnera%2032A%2C%2005-230%20Koby%C5%82ka!5e0!3m2!1suk!2spl!4v1689760025696!5m2!1suk!2spl"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <form
+          action="telegram.php"
+          method="POST"
+          id="form"
+          class="col-sm-6"
+          onsubmit="return validateForm()"
+        >
+          <legend>Masz pytanie?</legend>
+          <div class="form-group col-sm-10">
+            <input
+              type="text"
+              class="form-control"
+              name="user_name"
+              placeholder="Imię"
+            />
+            <div class="error-text" id="name-error"></div>
+          </div>
+
+          <div class="form-group col-sm-10">
+            <input
+              type="text"
+              class="form-control"
+              name="user_phone"
+              placeholder="Telefon"
+            />
+          </div>
+
+          <div class="form-group col-sm-10">
+            <input
+              type="email"
+              class="form-control"
+              name="user_email"
+              placeholder="E-mail"
+            />
+            <div class="error-text" id="email-error"></div>
+          </div>
+
+          <div class="form-group col-sm-10">
+            <textarea
+              name="coment"
+              style="height: 120px; resize: none"
+              placeholder="Jakie usługi Cię interesują?"
+            ></textarea>
+            <div class="error-text" id="email-error"></div>
+          </div>
+          <div class="form-group col-sm-10">
+            <button type="submit">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div id="reviews-block">
+          <div class="col-md-8 offset-md-2">
+            <h4>Opinie</h4>
+            <button id="show-review-form-btn">Zostaw swoje opinie</button>
+            <form id="review-form" style="display: none;">
+              <label for="stars">Ocena:</label>
+              <select id="stars" name="stars">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+              <br>
+              <label for="name">Imię:</label>
+              <input type="text" id="name" name="name" required>
+              <br>
+              <label for="review">Text:</label>
+              <textarea id="review" name="review" required></textarea>
+              <br>
+              <button type="button" id="add-review-btn">Dodaj</button>
+            </form>
+          </div>
+        <ul id="review-list" class="col-md-12"></ul>
+      </div>
+        </div>
+      </div>
+   
+
+
+    <footer id="footerContact">
+      <div class="container foot-cont">
+        <p><img src="images/logo.png" class="lofo-footer" alt="" /></p>
+        <p class="logo-phone">
+          &#xa9; Detailing in the Garage <br>
+          <a href="callto:602103298" id="phone">602103298</a>
+        </p>
+        <p>
+          <a href="https://www.tiktok.com/@nazikevrey?_t=8e7EZGJiK4k&_r=1"><i class="fa-brands fa-tiktok"></i
+          ></a>
+          <a href="mailto:solomiia.levytska@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </p>
+      </div>
+    </footer>
+     </div>
+ </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/review.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/preloader.js"></script>
+  </body>
+</html>

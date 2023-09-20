@@ -1,0 +1,50 @@
+/* Стилі для акордеону */
+.accordion-item {
+   margin-bottom: 10px;
+   border: none;
+      border-bottom: 2px solid #f5f5f5;
+}
+.accordion-header {
+   padding: 10px;
+   cursor: cell;
+   text-transform: uppercase;
+   font-weight: 600;
+}
+.accordion-item:hover {
+   border-bottom: 3px solid #63b8e9d8;
+}
+.accordion-content {
+   display: none;
+   padding: 10px;
+}
+.price {
+   position: relative;
+   text-align: center;
+   padding: 70px 0;
+}
+.litera {
+  font-size: 100px;
+   position: absolute;
+   top: 5%;
+   left: 50%;
+   color: #1286ca21;
+}
+.cena {
+   font-weight: 700;
+}
+
+@media screen and (max-width: 768px) { 
+      .accordion-header {
+         font-weight: 500;
+      }
+   
+      .price {
+         padding: 40px 0;
+      }
+   
+      .litera {
+         font-size: 50px;
+         top: 4%;
+         left: 40%;
+      }
+}

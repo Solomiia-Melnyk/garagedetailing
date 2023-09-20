@@ -1,0 +1,162 @@
+/* polishing page  */
+.polishing h2 {
+   text-align: center;
+   padding-bottom: 50px;
+   color: #1d5275;
+}
+
+.hidden {
+   display: none;
+}
+
+.polishing p:nth-child(2) {
+   line-height: 2;
+   text-align: center;
+   font-size: 18px;
+   margin-bottom: 70px;
+   background: #4682A9;
+   background: radial-gradient(circle farthest-corner at center center, #1d5275 0%, #bebdba 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.fa-car-on,
+.fa-square-check {
+   margin-right: 10px;
+   color: #1287ca;
+}
+
+.polerka li {
+   margin-bottom: 10px;
+}
+
+.polerka h5 {
+   padding-bottom: 20px;
+}
+
+.polerka {
+   margin-bottom: 70px;
+   position: relative;
+   padding: 20px;
+   background-color: #b7e2fedd;
+}
+
+.polerka a {
+   font-weight: 500;
+}
+
+#tipsBlock li {
+   padding-bottom: 15px;
+   line-height: 1.5;
+   list-style: square;
+}
+
+#tipsBlock {
+   padding-top: 20px;
+}
+
+#showTips, #showSpase {
+   border: none;
+   box-shadow: -9px 27px 106px -5px rgba(166, 204, 226, 0.42);
+   -webkit-box-shadow: -9px 27px 106px -5px rgba(121, 194, 236, 0.42);
+   -moz-box-shadow: -9px 27px 106px -5px rgba(121, 194, 236, 0.42);
+   /* border-radius: 10px; */
+   height: 50px;
+   padding: 10px;
+   font-size: 22px;
+   background-image: linear-gradient(345deg,
+         hsl(202deg 70% 76%) 0%,
+         hsl(202deg 70% 79%) 0%,
+         hsl(203deg 70% 83%) 2%,
+         hsl(203deg 70% 86%) 5%,
+         hsl(203deg 70% 89%) 13%,
+         hsl(204deg 69% 91%) 25%,
+         hsl(204deg 69% 94%) 47%,
+         hsl(204deg 69% 97%) 79%,
+         hsl(0deg 0% 100%) 100%);
+}
+
+#tip p {
+   font-size: 18px;
+}
+
+
+/* calculator */
+.calculator {
+   padding: 90px 0;
+
+}
+.calculator h5 {
+   text-align: center;
+   font-size: 22px;
+   padding-bottom: 30px;
+}
+#result {
+   padding-top: 50px;
+   color: cornflowerblue;
+}
+.calculator button {
+   border: none;
+      box-shadow: -9px 27px 106px -5px rgba(166, 204, 226, 0.42);
+      -webkit-box-shadow: -9px 27px 106px -5px rgba(121, 194, 236, 0.42);
+      -moz-box-shadow: -9px 27px 106px -5px rgba(121, 194, 236, 0.42);
+      
+      height: 40px;
+      padding: 10px;
+      font-size: 20px;
+      background-image: linear-gradient(345deg,
+            hsl(202deg 70% 76%) 0%,
+            hsl(202deg 70% 79%) 0%,
+            hsl(203deg 70% 83%) 2%,
+            hsl(203deg 70% 86%) 5%,
+            hsl(203deg 70% 89%) 13%,
+            hsl(204deg 69% 91%) 25%,
+            hsl(204deg 69% 94%) 47%,
+            hsl(204deg 69% 97%) 79%,
+            hsl(0deg 0% 100%) 100%);
+}
+
+
+
+
+#apod-container img {
+   width: 100%;
+   height: 350px;
+   margin-bottom: 30px;
+}
+
+#apod-container {
+   line-height: 1.5;
+   padding: 10px 0;
+}
+
+#apod-container h3 {
+   margin-bottom: 20px;
+}
+
+#apod-container p {
+   font-size: 14px;
+}
+
+#showSpase {
+   
+}
+
+#gif-container img{
+   padding-left: 12px;
+   width: 100%;
+   height: 250px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.gif-p {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 30px;
+   font-weight: bold;
+}
+.gif-block {
+   padding: 70px 0;
+}
