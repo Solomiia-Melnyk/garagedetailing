@@ -1,6 +1,5 @@
 
 // modal window
-// Перевірка, чи вже було показано модальне вікно
 if (!sessionStorage.getItem('modalShown')) {
    setTimeout(openModal, 8000);
 }

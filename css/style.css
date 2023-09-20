@@ -114,11 +114,31 @@ header {
   width: 100px;
   font-weight: 600;
   height: 100px;
-  background-color: black;
+  /* background-color: black;
   color: white;
-  text-transform: uppercase;
+  text-transform: uppercase; */
   padding: 15px;
   margin-top: 150px;
+
+  /* width: 100%; */
+    border: none;
+    box-shadow: -9px 27px 106px -5px rgba(166, 204, 226, 0.42);
+    -webkit-box-shadow: -9px 27px 106px -5px rgba(121, 194, 236, 0.42);
+    -moz-box-shadow: -9px 27px 106px -5px rgba(121, 194, 236, 0.42);
+    /* height: 50px; */
+    /* font-size: 24px; */
+    text-transform: uppercase;
+    /* margin-top: 10px; */
+    background-image: linear-gradient(345deg,
+        hsl(202deg 70% 76%) 0%,
+        hsl(202deg 70% 79%) 0%,
+        hsl(203deg 70% 83%) 2%,
+        hsl(203deg 70% 86%) 5%,
+        hsl(203deg 70% 89%) 13%,
+        hsl(204deg 69% 91%) 25%,
+        hsl(204deg 69% 94%) 47%,
+        hsl(204deg 69% 97%) 79%,
+        hsl(0deg 0% 100%) 100%);
 }
 .carousel-item img {
   height: 95%;
@@ -181,18 +201,34 @@ header {
   position: absolute;
   bottom: 15px;
   left: 35%;
-  background: linear-gradient(90deg, #3498db 50%, transparent 50%);
-    border: none;
+  /* background: linear-gradient(90deg, #3498db 50%, transparent 50%);
+    border: none; */
     padding: 10px 25px;
     color: black;
     font-size: 16px;
-    transition: background 0.3s ease;
+    /* transition: background 0.3s ease; */
   font-weight: 500;
   text-transform: uppercase;
+
+    border: none;
+    box-shadow: -9px 27px 106px -5px rgba(166, 204, 226, 0.42);
+    -webkit-box-shadow: -9px 27px 106px -5px rgba(121, 194, 236, 0.42);
+    -moz-box-shadow: -9px 27px 106px -5px rgba(121, 194, 236, 0.42);
+    text-transform: uppercase;
+    background-image: linear-gradient(345deg,
+        hsl(202deg 70% 76%) 0%,
+        hsl(202deg 70% 79%) 0%,
+        hsl(203deg 70% 83%) 2%,
+        hsl(203deg 70% 86%) 5%,
+        hsl(203deg 70% 89%) 13%,
+        hsl(204deg 69% 91%) 25%,
+        hsl(204deg 69% 94%) 47%,
+        hsl(204deg 69% 97%) 79%,
+        hsl(0deg 0% 100%) 100%);
 }
-.card a:hover {
+/* .card a:hover {
   background: linear-gradient(90deg, #3498db 50%, transparent 100%);
-}
+} */
 .card-text {
   padding-bottom: 30px;
 }
@@ -345,14 +381,30 @@ footer {
 }
 #show-review-form-btn,
 #add-review-btn {
-  background-color: #000000;
-  color: rgb(255, 255, 255);
-  border: none;
+  /* background-color: #000000; */
+  /* color: rgb(255, 255, 255); */
+  /* border: none; */
   padding: 5px 15px;
   height: 50px;
   width: 50%;
   margin-left: 25%;
   cursor: pointer;
+
+  border: none;
+    box-shadow: -9px 27px 106px -5px rgba(166, 204, 226, 0.42);
+    -webkit-box-shadow: -9px 27px 106px -5px rgba(121, 194, 236, 0.42);
+    -moz-box-shadow: -9px 27px 106px -5px rgba(121, 194, 236, 0.42);
+    text-transform: uppercase;
+    background-image: linear-gradient(345deg,
+        hsl(202deg 70% 76%) 0%,
+        hsl(202deg 70% 79%) 0%,
+        hsl(203deg 70% 83%) 2%,
+        hsl(203deg 70% 86%) 5%,
+        hsl(203deg 70% 89%) 13%,
+        hsl(204deg 69% 91%) 25%,
+        hsl(204deg 69% 94%) 47%,
+        hsl(204deg 69% 97%) 79%,
+        hsl(0deg 0% 100%) 100%);
 }
 #review-form {
   margin-top: 20px;

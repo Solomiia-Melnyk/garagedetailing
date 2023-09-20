@@ -7,34 +7,39 @@
    left: 25%;
    width: 50%;
    height: 80%;
-   border-radius: 5px;
    justify-content: center;
    align-items: center;
-   background-color: rgba(239, 228, 203, 0.749);
+   background-color: rgba(0, 0, 0, 0.404);
 }
 
 .zamow {
-   --glow-color: rgb(135, 231, 255);
-   --glow-spread-color: rgba(123, 222, 255, 0.781);
-   --enhanced-glow-color: rgb(231, 206, 255);
-   --btn-color: rgba(71, 183, 224, 0.514);
-   border: .25em solid var(--glow-color);
+   border: none;
+      box-shadow: -9px 27px 106px -5px rgba(166, 204, 226, 0.42);
+      -webkit-box-shadow: -9px 27px 106px -5px rgba(121, 194, 236, 0.42);
+      -moz-box-shadow: -9px 27px 106px -5px rgba(121, 194, 236, 0.42);
+      text-transform: uppercase;
+      background-image: linear-gradient(345deg,
+            hsl(202deg 70% 76%) 0%,
+            hsl(202deg 70% 79%) 0%,
+            hsl(203deg 70% 83%) 2%,
+            hsl(203deg 70% 86%) 5%,
+            hsl(203deg 70% 89%) 13%,
+            hsl(204deg 69% 91%) 25%,
+            hsl(204deg 69% 94%) 47%,
+            hsl(204deg 69% 97%) 79%,
+            hsl(0deg 0% 100%) 100%);
    padding: 1em 3em;
-   color: var(--glow-color);
    font-size: 15px;
    font-weight: bold;
    background-color: var(--btn-color);
-   border-radius: 1em;
    outline: none;
-   box-shadow: 0 0 1em .25em var(--glow-color),
-      0 0 4em 1em var(--glow-spread-color),
-      inset 0 0 .75em .25em var(--glow-color);
    text-shadow: 0 0 .5em var(--glow-color);
    position: relative;
    transition: all 0.3s;
    margin: 20px auto;
    text-transform: uppercase;
    width: 50%;
+   color: black;
    padding: 10px;
 }
 
@@ -65,13 +70,10 @@
    filter: hue-rotate(0);
    animation: rotate-hue634 linear 500ms infinite;
    animation-play-state: paused;
-   border-radius: 20px;
-   border-color: #000;
 }
 
 .zamow:hover::after {
    animation-play-state: running;
-   border-radius: 10px;
 }
 
 @keyframes rotate-hue634 {
@@ -83,18 +85,13 @@
 .zamow,
 .zamow::after {
    box-sizing: border-box;
-   border-radius: 20px;
-}
-
-.zamow:active {
-   --border-width: 5px;
 }
 
 .bn {
    padding: 0.9em 1.6em;
    border: none;
    outline: none;
-   color: #FFF;
+   color: #000;
    font-family: inherit;
    font-weight: 500;
    font-size: 17px;
@@ -112,7 +109,6 @@
    background-color: rgb(151, 151, 151);
    left: 0;
    top: 0;
-   border-radius: 10px;
 }
 
 .bn::before {
@@ -130,7 +126,6 @@
    filter: blur(8px);
    animation: glowing345 20s linear infinite;
    transition: opacity .3s ease-in-out;
-   border-radius: 20px;
    opacity: 0;
 }
 
@@ -168,11 +163,10 @@
 
 .modal-content {
    border: none;
-   background-color: #9cdafe48;
+   background-color: rgba(0, 0, 0, 0.386);
    background-size: cover;
    background-repeat: no-repeat;
    padding: 20px;
-   border-radius: 5px;
    text-align: center;
    height: 100%;
    display: flex;
