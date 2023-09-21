@@ -25,6 +25,7 @@
       <div class="loader-section section-left"></div>
       <div class="loader-section section-right"></div>
    </div>
+   <button id="scrollToTopButton"><i class="fa-solid fa-circle-arrow-up"></i></button>
     <header>
       <div class="nav-blue">
       <nav class="navbar navbar-expand-lg navbar-light container">
@@ -182,7 +183,61 @@
                 </div>
             </div>
           </div>
-    </div>
+
+
+        <div class="row po-wizyt">
+          <div class="gal-head">
+            <h2>Zdjęćia tylko po wizycie</h2>
+            <p class="litera2">Naszę prace</p>
+          </div>
+          <div class="col-md-4">
+            <img src="images/praca/mers1.png" alt="">
+          </div>
+          <div class="col-md-4">
+            <img src="images/praca/mers2.png" alt="">
+          </div>
+          <div class="col-md-4">
+            <img src="images/praca/mitsub.png" alt="">
+          </div>
+          <div class="col-md-4">
+            <img src="images/praca/mits2.png" alt="">
+          </div>
+          <div class="col-md-4">
+            <img src="images/praca/IMG_6002.png" alt="">
+          </div>
+          <div class="col-md-4">
+            <img src="images/praca/audi.png" alt="">
+          </div>
+        </div>
+        <div class="container">
+          <div class="gal-head">
+            <h2>Filmiki naszych prac</h2>
+            <p class="litera2">Naszę prace</p>
+          </div>
+          <div class="video-gallery row">
+              <video  muted loop class="col-md-3 col-sm-6 video-item">
+                <source src="images/praca/video_2023-08-03_16-36-58.mp4" type="video/mp4">
+              </video>
+              <video  muted loop class="col-md-3 col-sm-6  video-item">
+                <source src="images/praca/video_2023-08-03_16-37-14.mp4" type="video/mp4">
+              </video>
+              <video  muted loop class="col-md-3 col-sm-6  video-item">
+                <source src="images/praca/video_2023-08-03_16-37-22.mp4" type="video/mp4">
+              </video>
+              <video  muted loop class="col-md-3 col-sm-6  video-item">
+                <source src="images/praca/video_2023-08-03_16-50-41.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+
+  <div class="video-popup" id="videoPopup">
+    <span class="close" id="closePopup">&times;</span>
+    <video controls autoplay id="popupVideo" class="popup-video">
+      <source src="" type="video/mp4">
+    </video>
+  </div>
+
  
      <div class="container">
       <div class="row map-and-form">
@@ -203,7 +258,7 @@
           onsubmit="return validateForm()"
         >
           <legend>Masz pytanie?</legend>
-          <div class="form-group col-md-10">
+          <div class="form-group col-md-12">
             <input
               type="text"
               class="form-control"
@@ -213,7 +268,7 @@
             <div class="error-text" id="name-error"></div>
           </div>
 
-          <div class="form-group col-md-10">
+          <div class="form-group col-md-12">
             <input
               type="text"
               class="form-control"
@@ -222,7 +277,7 @@
             />
           </div>
 
-          <div class="form-group col-md-10">
+          <div class="form-group col-md-12">
             <input
               type="email"
               class="form-control"
@@ -232,14 +287,14 @@
             <div class="error-text" id="email-error"></div>
           </div>
 
-          <div class="form-group col-md-10">
+          <div class="form-group col-md-12">
             <textarea
               name="coment"
               style="height: 120px; resize: none"
               placeholder="Jakie usługi Cię interesują?"
             ></textarea>
           </div>
-          <div class="form-group col-md-10">
+          <div class="form-group col-md-12">
             <button type="submit">Send</button>
           </div>
         </form>
@@ -269,6 +324,7 @@
     ></script>
     <script src="js/all.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/popap-galeriia.js"></script>
     <script src="js/preloader.js"></script>
   </body>
 </html>

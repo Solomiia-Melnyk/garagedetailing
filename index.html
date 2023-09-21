@@ -24,6 +24,7 @@
     <div class="loader-section section-left"></div>
     <div class="loader-section section-right"></div>
   </div>
+  <button id="scrollToTopButton"><i class="fa-solid fa-circle-arrow-up"></i></button>
  
   <div>
     <header class="header">
@@ -241,11 +242,11 @@
           action="telegram.php"
           method="POST"
           id="form"
-          class="col-sm-6"
+          class=" col-md-6 col-sm-12"
           onsubmit="return validateForm()"
         >
           <legend>Masz pytanie?</legend>
-          <div class="form-group col-sm-10">
+          <div class="form-group col-sm-12">
             <input
               type="text"
               class="form-control"
@@ -255,7 +256,7 @@
             <div class="error-text" id="name-error"></div>
           </div>
 
-          <div class="form-group col-sm-10">
+          <div class="form-group col-sm-12">
             <input
               type="text"
               class="form-control"
@@ -264,7 +265,7 @@
             />
           </div>
 
-          <div class="form-group col-sm-10">
+          <div class="form-group col-sm-12">
             <input
               type="email"
               class="form-control"
@@ -274,7 +275,7 @@
             <div class="error-text" id="email-error"></div>
           </div>
 
-          <div class="form-group col-sm-10">
+          <div class="form-group col-sm-12">
             <textarea
               name="coment"
               style="height: 120px; resize: none"
@@ -282,7 +283,7 @@
             ></textarea>
             <div class="error-text" id="email-error"></div>
           </div>
-          <div class="form-group col-sm-10">
+          <div class="form-group col-sm-12">
             <button type="submit">Send</button>
           </div>
         </form>

@@ -40,7 +40,7 @@
    -webkit-backface-visibility: hidden;
    backface-visibility: hidden;
    border: 1px solid rgba(255, 255, 255, 0.8);
-   border-radius: 1rem;
+
    color: white;
    box-shadow: 0 0 0.3em rgba(255, 255, 255, 0.5);
    font-weight: 700;
@@ -71,7 +71,6 @@
    height: 110%;
    position: absolute;
    z-index: -1;
-   border-radius: 1em;
    filter: blur(20px);
    animation: animate 5s linear infinite;
 }
@@ -93,7 +92,6 @@
 .myCard img {
 width: 100%;
 height: 100%;
-border-radius: 1rem;
 }
 .myCard {
    position: relative;
@@ -117,14 +115,75 @@ border-radius: 1rem;
    font-weight: 700;
 }
 
+/* Додайте стилі для ваших відео-блоків тут */
+
+.video-gallery {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.video-item {
+   cursor: pointer;
+   transition: transform 0.2s;
+   margin-bottom: 20px;
+}
+
+.video-item:hover {
+   transform: scale(1.05);
+}
+
+/* Стилі для попапа */
+.video-popup {
+   display: none;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background: rgba(0, 0, 0, 0.7);
+   z-index: 1000;
+   text-align: center;
+   padding: 20px;
+}
+
+.popup-video {
+   width: 80%;
+   max-height: 80%;
+   margin: 0 auto;
+}
+
+.close {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   font-size: 24px;
+   cursor: pointer;
+   color: white;
+}
+.video video {
+   width: 97%;
+   height: 250px;
+}
+#video-head {
+   text-align: center;
+}
+.po-wizyt img{
+   height: 250px;
+   width: 100%;
+   margin-bottom: 20px;
+}
+
+
+
+
 @media screen and (max-width: 768px) {
    .gal-head {
       padding: 40px 0;
    }
-
    .litera2 {
       font-size: 50px;
       top: 5%;
       left: 25%;
    }
+     
 }
